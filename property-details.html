@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoBroker</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/property-details.css">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="w-full">
+        <nav class="w-full flex items-center justify-between h-[50px] lg:h-[70px] px-6 2xl:px-20 relative">
+            <a href="/" class="">
+                <img src="/assets/images/logo.svg" alt="Company Logo" class="w-[110px] lg:w-[180px]">
+            </a>
+            <div class="hidden lg:flex items-center justify-end gap-3">
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[13px] border-[1.5px] border-gray-400 px-3 py-1.5 text-gray-500">
+                    Pay Rent
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[13px] border-[1.5px] border-[#F23252] px-3 py-1.5 text-white bg-[#F23252]">
+                    Post Your Property
+                </a>
+                <button type="button" class="flex items-center gap-2 group relative">
+                    <img src="/assets/images/user.png" alt="User Profile"
+                        class="w-8 h-8 bg-gray-300 rounded-full object-cover">
+                    <span class="text-[13px] text-gray-400">Ethan Smit...</span>
+                    <i class="bi bi-chevron-down secondary-text group-hover:rotate-180 transition-all duration-300"></i>
+                    <!-- profile dropdown -->
+                    <div
+                        class="w-[230px] bg-white shadow-2xl min-h-[150px] py-2 absolute top-8 right-0 text-start group-hover:block hidden transition-all duration-500 z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">Profile</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">My Chats</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Residential Plan
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Commercial Plan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+                <div class="h-5 border"></div>
+                <button>
+                    <i class="bi bi-bell secondary-text"></i>
+                </button>
+                <div class="h-5 border"></div>
+                <!-- menu -->
+                <button type="button" class="secondary-text flex items-center gap-1 group relative">
+                    <i class="bi bi-list text-xl"></i>
+                    <span>Menu</span>
+                    <div
+                        class="w-[200px] bg-white shadow-2xl min-h-[150px] absolute top-6 right-0 text-start group-hover:block hidden transition-all duration-500 border z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Post Your
+                                    Property</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Rental
+                                    Agreement</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Painting & Cleaning
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Packers and Movers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+
+            </div>
+            <button type="button" class="lg:hidden block secondary-text">
+                <i class="bi bi-list text-xl"></i>
+            </button>
+
+        </nav>
+    </header>
+    <!-- navbar -->
+
+    <section class="w-full grid grid-cols-1 lg:grid-cols-3 gap-6 px-6 2xl:px-80 bg-gray-50 pt-5">
+        <!-- left section -->
+        <section class="w-full col-span-1 lg:col-span-2 pb-10">
+            <!-- property images -->
+            <section class="w-full grid grid-cols-3 gap-1">
+                <div class="w-full col-span-2">
+                    <img src="/assets/images/hero-bg.jpg" alt=""
+                        class="w-full h-auto lg:h-[80vh] 2xl:h-[50vh] object-cover cursor-pointer">
+                </div>
+                <div class="w-full col-span-1 flex flex-col gap-1">
+                    <div class="h-[45%] w-full cursor-pointer">
+                        <img src="/assets/images/hero-bg.jpg" alt="" class="w-full h-full object-cover cursor-pointer">
+                    </div>
+                    <div class="w-full h-[55%] relative cursor-pointer">
+                        <img src="/assets/images/hero-bg.jpg" alt="" class="w-full h-full object-cover cursor-pointer">
+                        <div
+                            class="w-full h-full absolute inset-0 z-10 flex items-center justify-center bg-[rgba(0,0,0,0.4)]">
+                            <span class="font-semibold text-xl text-white">
+                                +9
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- property images -->
+
+            <!-- propety info start -->
+            <section class="w-full p-6 my-5 bg-white border">
+                <section class="w-full">
+                    <h2 class="text-lg lg:text-[24px] font-semibold tracking-tight">4 BHK House For Sale In 9th
+                        Phase Jp
+                        Nagar,</h2>
+                    <p class="secondary-text mt-2 text-sm">
+                        Independent House, House 240,BDA Layout,9th Phase,7th Block
+                    </p>
+                </section>
+
+                <section class="w-full mt-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-start space-y-1">
+                        <p class="font-medium text-sm">₹ 2.2 Crores</p>
+                        <p class="text-gray-600 text-[10px]">Negotiable</p>
+                    </div>
+                    <div class="text-start space-y-1">
+                        <p class="font-medium text-sm">₹ 1.26 Lacs/Month</p>
+                        <p class="secondary-text text-xs">Estimated EMI</p>
+                    </div>
+                    <div class="text-start space-y-1">
+                        <p class="font-medium text-sm">5,500</p>
+                        <p class="secondary-text text-xs">Sq.Ft</p>
+                    </div>
+                    <div class="text-start space-y-1">
+                        <p class="font-medium text-sm">Need home loan?</p>
+                        <button type="button" class="bg-[#F23252] text-white px-3 py-1.5 text-sm font-medium">Apply
+                            Loan</button>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Property Overview start -->
+            <section class="w-full bg-white p-6 border">
+                <h2 class="font-semibold text-[18px] lg:text-[22px] mb-5">Overview</h2>
+
+                <section class="w-full grid grid-cols-2 lg:grid-cols-4 gap-6 border-b py-2">
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Age of Building</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">3-5 years</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Ownership Type</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">Self Owned</p>
+                    </div>
+                </section>
+                <section class="w-full grid grid-cols-2 lg:grid-cols-4 gap-6 border-b py-2">
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Flooring</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">Marbel/Granite</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Builtup Area</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">5,500 Sq.Ft</p>
+                    </div>
+                </section>
+                <section class="w-full grid grid-cols-2 lg:grid-cols-4 gap-6 border-b py-2">
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Carpet Area</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">4,800 Sq.Ft</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Plot Area</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">1,200 Sq.Ft</p>
+                    </div>
+                </section>
+                <section class="w-full grid grid-cols-2 lg:grid-cols-4 gap-6 border-b py-2">
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Furnishing Status</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">Unfurnished</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Facing</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">East</p>
+                    </div>
+                </section>
+                <section class="w-full grid grid-cols-2 lg:grid-cols-4 gap-6 border-b py-2">
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Floor</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">0/4</p>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Parking</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">Bike And Car</p>
+                    </div>
+                </section>
+                <section class="w-full lg:w-1/2 grid grid-cols-2 gap-4 border-b py-2">
+                    <div class="flex items-center gap-1.5">
+                        <p class="text-xs secondary-text">Gated Security</p>
+                    </div>
+                    <div class="">
+                        <p class="text-xs font-medium text-gray-600">No</p>
+                    </div>
+                </section>
+            </section>
+            <!-- Property Overview end -->
+
+            <!-- NoBroker services start -->
+            <section class="w-full bg-gray-50 bg-white border p-6 mt-5">
+                <h2 class="font-semibold text-[18px] lg:text-[22px] mb-5 tracking-tight">NoBroker Services</h2>
+
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 mt-10 gap-5">
+                    <div class="text-center flex flex-col items-center gap-5 bg-white px-4">
+                        <div
+                            class="w-[70px] h-[70px] rounded-full bg-white custom-shadow flex items-center justify-center p-2">
+                            <img src="/assets/icons/paint-brush-icon.png" alt="" class="w-full h-full object-contain">
+                        </div>
+                        <p class="text-[12px] text-[#8C8C8C] group-hover:text-white transition-all duration-500">
+                            Painting
+                        </p>
+                    </div>
+                    <div class="text-center flex flex-col items-center gap-5 bg-white px-4">
+                        <div
+                            class="w-[70px] h-[70px] rounded-full bg-white custom-shadow flex items-center justify-center p-2">
+                            <img src="/assets/icons/loan-eligibility-icon.png" alt=""
+                                class="w-full h-full rounded-full">
+                        </div>
+                        <p class="text-[12px] text-[#8C8C8C] group-hover:text-white transition-all duration-500">
+                            Check Loan Eligibility
+                        </p>
+                    </div>
+                    <div class="text-center flex flex-col items-center gap-5 bg-white px-4">
+                        <div
+                            class="w-[70px] h-[70px] rounded-full bg-white custom-shadow flex items-center justify-center">
+                            <img src="/assets/icons/interior-icon.png" alt="">
+                        </div>
+                        <p class="text-[12px] text-[#8C8C8C] group-hover:text-white transition-all duration-500">
+                            Estimate Interiors Cost
+                        </p>
+                    </div>
+                    <div class="text-center flex flex-col items-center gap-5 bg-white px-4">
+                        <div
+                            class="w-[70px] h-[70px] rounded-full bg-white custom-shadow flex items-center justify-center p-4">
+                            <img src="/assets/icons/legal-services.png" alt="" class="w-full h-full opacity-70">
+                        </div>
+                        <p class="text-[12px] text-[#8C8C8C] group-hover:text-white transition-all duration-500">
+                            Book Legal Services
+                        </p>
+                    </div>
+                    <div class="text-center flex flex-col items-center gap-5 bg-white px-4">
+                        <div
+                            class="w-[70px] h-[70px] rounded-full bg-white custom-shadow flex items-center justify-center p-4">
+                            <img src="/assets/icons/agreement-icon.png" alt="" class="opacity-70">
+                        </div>
+                        <p class="text-[12px] text-[#8C8C8C] group-hover:text-white transition-all duration-500">
+                            Create Agreement
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- NoBroker services end -->
+
+            <!-- descrition -->
+            <section class="w-full bg-gray-50 bg-white p-6 mt-5 flex flex-col items-start gap-4 border">
+                <h2 class="font-semibold text-[18px] lg:text-[22px] tracking-tight">Descrption</h2>
+                <p class="text-[13.5px] text-gray-800 leading-6">
+                    Its A BDA Property
+                    This 4 BHK in 9th phase Jp Nagar, for sale is an ideal investment, the home is spacious and
+                    comfortable. This East facing home is over 5500 sqft. & is in a convenient location. You get ample &
+                    dedicated dedicated parking area for car and bike with this home.
+                </p>
+                <p class="text-[13.5px] text-gray-800 leading-6">
+                    As there are bus station, super market & other local amenities close by, you'll find everything you
+                    need near home. Since there is an ATM & petrol pump close to this home you will have easy access to
+                    money & fuel at any time.
+                </p>
+                <p class="text-[13.5px] text-gray-800 leading-6">
+                    Being situated near Rainbow Clinic and Diagnostic Laboratory, Rajnandini Hospital and Vittal Mallya
+                    Scientific Research Foundation, emergency care is very easily available at any time. Modern School
+                    and Tree House Play Group are closeby and are known for providing quality education.
+                </p>
+                <p class="text-[13.5px] text-gray-800 leading-6">
+                    Never miss out on lifestyle as Mansan Kennel, Mayur Jewellers and Texmo Industries are so close by.
+                    With Cinepolis, Guru Siddeshwara Cinema Theatre & Sri Vinayaka Theatre close by, you can catch your
+                    favourite movies running & never worry about missing a show because of traffic.
+                </p>
+            </section>
+
+        </section>
+
+        <!-- right section -->
+        <section class="w-full col-span-1 flex flex-col gap-5">
+            <section class="w-full bg-white">
+                <div class="w-full grid grid-cols-2">
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">4 Bedroom</p>
+                            <p class="text-gray-600 text-[10px]">No. of Bedrooms</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <i class="bi bi-calendar3 text-lg text-gray-600"></i>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">Oct 24, 2024</p>
+                            <p class="text-gray-600 text-[10px]">Posted on</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">5 Bathroom</p>
+                            <p class="text-gray-600 text-[10px]">No. of Bathrooms</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <i class="bi bi-key text-xl text-gray-600 rotate-90"></i>
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">Apr 5, 2025</p>
+                            <p class="text-gray-600 text-[10px]">Possession</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">3</p>
+                            <p class="text-gray-600 text-[10px]">Balcony</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">Independent House</p>
+                            <p class="text-gray-600 text-[10px]">Independent House/Villa</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">Bike and Car</p>
+                            <p class="text-gray-600 text-[10px]">Parking</p>
+                        </div>
+                    </div>
+                    <div class="w-full flex items-center gap-3 p-4 border">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="text-[15px] font-medium">Full</p>
+                            <p class="text-gray-600 text-[10px]">Power Backup</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="w-full flex items-center justify-between gap-5 p-3 border border-cyan-300 bg-cyan-50">
+                <div class="w-[70%] flex items-center gap-2">
+                    <i class="bi bi-calendar4 text-cyan-700 text-2xl"></i>
+                    <p class="text-xs text-cyan-800">The owner will be showing this property at 11:30 AM on 5 April!</p>
+                </div>
+                <button type="button" class="text-cyan-800 text-sm font-medium flex items-center gap-1">
+                    Join Visit
+                    <i class="bi bi-chevron-down text-cyan-700 -rotate-90 transition-all duration-300"></i>
+                </button>
+            </div>
+
+            <div class="w-full p-2 grid grid-cols-2 gap-3 bg-white border">
+                <button type="button" class="bg-[#F23252] text-white font-semibold px-4 py-2">Contact</button>
+                <button type="button" class="bg-[#F23252] text-white font-semibold px-4 py-2">Schedule Visit</button>
+            </div>
+
+            <div class="w-full p-3 border bg-white flex flex-col">
+                <div class="flex items-center gap-2">
+                    <i class="bi bi-exclamation-circle text-cyan-700 text-xl"></i>
+                    <p class="text-gray-600 text-sm">Report what was not correct in this property</p>
+                </div>
+                <div class="w-full flex items-center gap-2 mt-2 lg:pl-[7%]">
+                    <button type="button"
+                        class="bg-gray-100 font-medium text-xs px-3.5 py-2.5 hover:bg-gray-200 transition-all duration-300">
+                        Listed by Broker
+                    </button>
+                    <button type="button"
+                        class="bg-gray-100 font-medium text-xs px-3.5 py-2.5 hover:bg-gray-200 transition-all duration-300">
+                        Sold Out
+                    </button>
+                    <button type="button"
+                        class="bg-gray-100 font-medium text-xs px-3.5 py-2.5 hover:bg-gray-200 transition-all duration-300">
+                        Wrong Info
+                    </button>
+                </div>
+            </div>
+
+            <div class="w-full bg-white py-3 px-5 border">
+                <h3 class="text-xl font-normal text-gray-600">Activity On This Property</h3>
+                <div class="w-full border my-3"></div>
+                <div class="w-full flex gap-2 items-center">
+                    <div class="bg-gray-50 p-2">
+                        <div class="flex items-center gap-2">
+                            <i class="bi bi-person text-2xl"></i>
+                            <p class="text-gray-600 font-semibold text-xl">773</p>
+                        </div>
+                        <p class="text-gray-600 font-light text-xs">Unique Views</p>
+                    </div>
+                    <div class="bg-gray-50 p-2">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                            <p class="text-gray-600 font-semibold text-xl">11</p>
+                        </div>
+                        <p class="text-gray-600 font-light text-xs">Shortlists</p>
+                    </div>
+                    <div class="bg-gray-50 p-2">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                                class="bi bi-telephone-x" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708" />
+                            </svg>
+                            <p class="text-gray-600 font-semibold text-xl">23</p>
+                        </div>
+                        <p class="text-gray-600 font-light text-xs">Contacted</p>
+                    </div>
+                </div>
+                <p class="text-end text-gray-600 text-xs mt-3">
+                    Powered By : <span class="font-semibold">NBEstimate</span>
+                </p>
+            </div>
+
+            <div class="w-full bg-white py-3 px-5 border flex flex-col items-start gap-2">
+                <h3 class="text-xl font-medium text-gray-600">Similar Projects</h3>
+
+                <a href="#"
+                    class="flex flex-col items-start bg-white border border-gray-200 shadow-sm md:flex-row hover:bg-gray-50 h-40">
+                    <img class="object-cover w-full h-96 md:h-40 md:w-32"
+                        src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="flex flex-col justify-between p-3 leading-normal h-full w-full">
+                        <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">Noteworthy
+                            technology...</h5>
+                        <p class="mb-3 font-normal text-gray-700 text-xs">Here are the biggest enterprise</p>
+                        <p class="mb-3 font-normal text-gray-700 text-xs text-red-400">3.4 km away</p>
+                        <div class="w-full grid grid-cols-2">
+                            <div class="">
+                                <p class="mb-1 font-normal text-gray-700 text-xs">Price</p>
+                                <p class="font-normal text-gray-700 text-[10px]">2.34 Crores</p>
+                            </div>
+                            <div class="">
+                                <p class="mb-1 font-normal text-gray-700 text-xs">Price</p>
+                                <p class="font-normal text-gray-700 text-[10px]">2000 Sqft</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#"
+                    class="flex flex-col items-start bg-white border border-gray-200 shadow-sm md:flex-row hover:bg-gray-50 h-40">
+                    <img class="object-cover w-full h-96 md:h-40 md:w-32"
+                        src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="flex flex-col justify-between p-3 leading-normal h-full w-full">
+                        <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">Noteworthy
+                            technology...</h5>
+                        <p class="mb-3 font-normal text-gray-700 text-xs">Here are the biggest enterprise</p>
+                        <p class="mb-3 font-normal text-gray-700 text-xs text-red-400">3.4 km away</p>
+                        <div class="w-full grid grid-cols-2">
+                            <div class="">
+                                <p class="mb-1 font-normal text-gray-700 text-xs">Price</p>
+                                <p class="font-normal text-gray-700 text-[10px]">2.34 Crores</p>
+                            </div>
+                            <div class="">
+                                <p class="mb-1 font-normal text-gray-700 text-xs">Price</p>
+                                <p class="font-normal text-gray-700 text-[10px]">2000 Sqft</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#"
+                    class="flex flex-col items-start bg-white border border-gray-200 shadow-sm md:flex-row hover:bg-gray-50 h-40">
+                    <img class="object-cover w-full h-96 md:h-40 md:w-32"
+                        src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
+                    <div class="flex flex-col justify-between p-3 leading-normal h-full w-full">
+                        <h5 class="mb-2 text-sm font-bold tracking-tight text-gray-900">Noteworthy
+                            technology...</h5>
+                        <p class="mb-3 font-normal text-gray-700 text-xs">Here are the biggest enterprise</p>
+                        <p class="mb-3 font-normal text-gray-700 text-xs text-red-400">3.4 km away</p>
+                        <div class="w-full grid grid-cols-2">
+                            <div class="">
+                                <p class="mb-1 font-normal text-gray-700 text-xs">Price</p>
+                                <p class="font-normal text-gray-700 text-[10px]">2.34 Crores</p>
+                            </div>
+                            <div class="">
+                                <p class="mb-1 font-normal text-gray-700 text-xs">Price</p>
+                                <p class="font-normal text-gray-700 text-[10px]">2000 Sqft</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="w-full">
+                <button type="button"
+                    class="w-full text-center bg-[#F23252] hover:opacity-85 text-white text-sm font-semibold py-3">More
+                    4 BHK
+                    Properties to buy in
+                    bangalore</button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Neighbourhood section -->
+    <section class="w-full px-6 2xl:px-80 bg-gray-50 pb-10">
+        <section class="w-full bg-white p-5 border">
+            <h3 class="text-xl font-medium text-gray-600">Neighbourhood</h3>
+            <section class="w-full grid grid-cols-1 lg:grid-cols-3 mt-5">
+                <section class="w-full flex flex-col items-start col-span-1 lg:col-span-2">
+                    <div class="w-full flex gap-2">
+                        <div class="lg:w-[20%] h-[50px] flex items-center justify-center gap-1">
+                            <i class="bi bi-geo-alt text-[#F23252] text-2xl"></i>
+                            <span class="text-sm text-gray-600">Your Location</span>
+                        </div>
+                        <input type="text" class="w-[50%] border text-sm px-3 h-[50px]"
+                            placeholder="Type in place to get directions">
+                        <button type="button"
+                            class="border-2 border-[#F23252] text-[#F23252] font-semibold w-[30%] text-sm py-3">Get
+                            Directions
+                        </button>
+                    </div>
+                    <div class="w-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448194.82162352453!2d77.09323125!3d28.6440836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi%2C%20India!5e0!3m2!1sen!2s!4v1743516681243!5m2!1sen!2s"
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+
+                <!-- transit -->
+                <section class="w-full col-span-1">
+                    <div class="w-full bg-gray-50 flex items-center justify-evenly gap-2">
+                        <button type="button"
+                            class="h-[50px] px-4 text-sm flex items-center border-b-2 border-[#F23252] font-semibold text-[#F23252]">
+                            Transit
+                        </button>
+                        <button type="button" class="h-[50px] px-4 text-sm flex items-center font-semibold">
+                            Essentials
+                        </button>
+                        <button type="button" class="h-[50px] px-4 text-sm flex items-center font-semibold">
+                            Utility
+                        </button>
+                    </div>
+                    <div class="w-full h-[350px] flex flex-col items-start gap-2 bg-gray-50 p-1">
+                        <!-- FAQ Item 1 (Opened by default) -->
+                        <div class="faq-item border bg-white w-full">
+                            <button
+                                class="faq-question w-full p-4 flex justify-between items-center font-medium bg-gray-white">
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-bus-front text-gray-600" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0m8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9s3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44 44 0 0 0 8 4m0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44 44 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43 43 0 0 0 8 3" />
+                                        <path
+                                            d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A44 44 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2zM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A43 43 0 0 1 8 1" />
+                                    </svg>
+                                    <span class="text-xs text-[#F23252]">Bus Stations</span>
+                                </div>
+                                <span class="arrow">▼</span>
+                            </button>
+                            <div class="faq-answer px-4 pb-4 bg-white text-xs flex flex-col items-start gap-3">
+                                <div class="w-full flex items-center justify-between">
+                                    <p class="text-gray-600">Sarathy Nagar Bus Stand</p>
+                                    <p class="text-gray-600">0.6 km | 8 mins</p>
+                                </div>
+                                <div class=" w-full flex items-center justify-between">
+                                    <p class="text-gray-600">Tipu Sultan Bus Stand</p>
+                                    <p class="text-gray-600">0.6 km | 8 mins</p>
+                                </div>
+                                <div class="w-full flex items-center justify-between">
+                                    <p class="text-gray-600">Kothnur Bus Stand</p>
+                                    <p class="text-gray-600">0.6 km | 8 mins</p>
+                                </div>
+                                <div class="w-full flex items-center justify-between">
+                                    <p class="text-gray-600">Surabhi Nagar Nagar Bus Stand</p>
+                                    <p class="text-gray-600">0.6 km | 8 mins</p>
+                                </div>
+                                <div class="w-full flex items-center justify-between">
+                                    <p class="text-gray-600">B.K. Circle Bus Stand</p>
+                                    <p class="text-gray-600">0.6 km | 8 mins</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item border bg-white w-full">
+                            <button
+                                class="faq-question w-full p-4 flex justify-between items-center font-medium text-xs">
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#000"
+                                        class="bi bi-airplane" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849m.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1s-.458.158-.678.599" />
+                                    </svg>
+                                    <span>Airport</span>
+                                </div>
+                                <span class="arrow">▼</span>
+                            </button>
+                            <div class="faq-answer p-4 bg-white hidden">
+                                <div class="w-full flex items-center justify-between text-xs">
+                                    <p class=" text-gray-600">Sarathy Nagar Bus Stand</p>
+                                    <p class="text-gray-600">0.6 km | 8 mins</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item border bg-white w-full">
+                            <button
+                                class="faq-question w-full p-4 flex justify-between items-center font-medium text-xs">
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-train-front" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.621 1.485c1.815-.454 2.943-.454 4.758 0 .784.196 1.743.673 2.527 1.119.688.39 1.094 1.148 1.094 1.979V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V4.583c0-.831.406-1.588 1.094-1.98.784-.445 1.744-.922 2.527-1.118m5-.97C8.647.02 7.353.02 5.38.515c-.924.23-1.982.766-2.78 1.22C1.566 2.322 1 3.432 1 4.582V13.5A2.5 2.5 0 0 0 3.5 16h9a2.5 2.5 0 0 0 2.5-2.5V4.583c0-1.15-.565-2.26-1.6-2.849-.797-.453-1.855-.988-2.779-1.22ZM5 13a1 1 0 1 1-2 0 1 1 0 0 1 2 0m0 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0m7 1a1 1 0 1 0-1-1 1 1 0 1 0-2 0 1 1 0 0 0 2 0 1 1 0 0 0 1 1M4.5 5a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h3V5zm4 0v3h3a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5zM3 5.5A1.5 1.5 0 0 1 4.5 4h7A1.5 1.5 0 0 1 13 5.5v2A1.5 1.5 0 0 1 11.5 9h-7A1.5 1.5 0 0 1 3 7.5zM6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1z" />
+                                    </svg>
+                                    <span>Train Stations</span>
+                                </div>
+
+                                <span class="arrow">▼</span>
+                            </button>
+                            <div class="faq-answer bg-gray-100 hidden">
+                                <div class="faq-answer p-4 bg-white text-xs flex flex-col items-start gap-3">
+                                    <div class="w-full flex items-center justify-between">
+                                        <p class="text-gray-600">Sarathy Nagar Bus Stand</p>
+                                        <p class="text-gray-600">0.6 km | 8 mins</p>
+                                    </div>
+                                    <div class=" w-full flex items-center justify-between">
+                                        <p class="text-gray-600">Tipu Sultan Bus Stand</p>
+                                        <p class="text-gray-600">0.6 km | 8 mins</p>
+                                    </div>
+                                    <div class="w-full flex items-center justify-between">
+                                        <p class="text-gray-600">Kothnur Bus Stand</p>
+                                        <p class="text-gray-600">0.6 km | 8 mins</p>
+                                    </div>
+                                    <div class="w-full flex items-center justify-between">
+                                        <p class="text-gray-600">Surabhi Nagar Nagar Bus Stand</p>
+                                        <p class="text-gray-600">0.6 km | 8 mins</p>
+                                    </div>
+                                    <div class="w-full flex items-center justify-between">
+                                        <p class="text-gray-600">B.K. Circle Bus Stand</p>
+                                        <p class="text-gray-600">0.6 km | 8 mins</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </section>
+        </section>
+    </section>
+
+    <!-- footer start -->
+    <footer class="w-full py-10 lg:pt-20 px-6 2xl:px-80 bg-white">
+        <section class="w-full flex flex-col items-center gap-6">
+            <div class="flex flex-col items-center gap-4">
+                <a href="/">
+                    <img src="/assets/images/logo.svg" alt="logo" class="w-[220px] leading-none m-0">
+                </a>
+                <p class="text-sm secondary-text lg:w-[60%] text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa blanditiis quia exercitationem
+                    vitae obcaecati recusandae, inventore sapiente enim qui!
+                </p>
+
+            </div>
+            <div class="">
+                <ul class="flex items-center justify-center gap-4 lg:gap-10 mx-auto flex-wrap">
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Home</a></li>
+                    <li><a href="/" class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">About
+                            Us</a></li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Careers</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Testimonials</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Sitemap</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">FAQs</a></li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Privacy
+                            Policy</a>
+                    </li>
+                    <li><a href="/" class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Terms
+                            &
+                            Conditions</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+                <a href="/">
+                    <img src="/assets/images/download-on-the-app-store.png" alt="download-on-the-app-store"
+                        class="w-32 h-[50px] object-cover">
+                </a>
+                <a href="/">
+                    <img src="/assets/images/download-on-the-google-play.png" alt="download-on-the-google-play"
+                        class="w-32 h-[45px] rounded-xl object-cover">
+                </a>
+            </div>
+        </section>
+        <section class="w-full border-t mt-6 pt-5 flex flex-col items-center gap-4 justify-between">
+            <div>
+                <ul class="flex items-center justify-end gap-5 flex-wrap">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i
+                            class="bi bi-facebook text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.x.com" target="_blank">
+                        <i
+                            class="bi bi-twitter text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i
+                            class="bi bi-instagram text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i
+                            class="bi bi-linkedin text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i
+                            class="bi bi-youtube text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                </ul>
+            </div>
+            <p class="secondary-text text-sm text-center">© 2013-25 NoBroker Technologies Solutions Pvt. Ltd.</p>
+        </section>
+    </footer>
+    <!-- footer end -->
+
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
