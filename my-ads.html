@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ads</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/property-details.css">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="w-full">
+        <nav class="w-full flex items-center justify-between h-[50px] lg:h-[70px] px-6 2xl:px-20 relative">
+            <a href="/" class="">
+                <img src="/assets/images/logo.svg" alt="Company Logo" class="w-[110px] lg:w-[180px]">
+            </a>
+            <div class="hidden lg:flex items-center justify-end gap-3">
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[13px] border-[1.5px] border-gray-400 px-3 py-1.5 text-gray-500">
+                    Pay Rent
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[13px] border-[1.5px] border-[#F23252] px-3 py-1.5 text-white bg-[#F23252]">
+                    Post Your Property
+                </a>
+                <button type="button" class="flex items-center gap-2 group relative">
+                    <img src="/assets/images/user.png" alt="User Profile"
+                        class="w-8 h-8 bg-gray-300 rounded-full object-cover">
+                    <span class="text-[13px] text-gray-400">Ethan Smit...</span>
+                    <i class="bi bi-chevron-down secondary-text group-hover:rotate-180 transition-all duration-300"></i>
+                    <!-- profile dropdown -->
+                    <div
+                        class="w-[230px] bg-white shadow-2xl min-h-[150px] py-2 absolute top-8 right-0 text-start group-hover:block hidden transition-all duration-500 z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">Profile</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">My Chats</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Residential Plan
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Commercial Plan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+                <div class="h-5 border"></div>
+                <button>
+                    <i class="bi bi-bell secondary-text"></i>
+                </button>
+                <div class="h-5 border"></div>
+                <!-- menu -->
+                <button type="button" class="secondary-text flex items-center gap-1 group relative">
+                    <i class="bi bi-list text-xl"></i>
+                    <span>Menu</span>
+                    <div
+                        class="w-[200px] bg-white shadow-2xl min-h-[150px] absolute top-6 right-0 text-start group-hover:block hidden transition-all duration-500 border z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Post Your
+                                    Property</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Rental
+                                    Agreement</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Painting & Cleaning
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Packers and Movers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+
+            </div>
+            <button type="button" class="lg:hidden block secondary-text">
+                <i class="bi bi-list text-xl"></i>
+            </button>
+
+        </nav>
+    </header>
+    <!-- navbar -->
+
+    <section class="w-full flex items-start flex-col lg:flex-row">
+        <div class="w-full lg:w-[20%] bg-gray-50 border p-5 relative lg:min-h-[62vh]">
+            <h2 class="text-xs font-semibold text-gray-600">Manage your account</h2>
+            <div class="w-full border my-3"></div>
+            <ul class="w-full flex flex-col items-start gap-1">
+                <li class="w-full">
+                    <a href="/profile.html" class="text-xs text-gray-600 w-full block p-3 rounded-lg">
+                        Basic Profile
+                    </a>
+                </li>
+                <li class="w-full">
+                    <a href="/payment-details.html" class="text-xs text-gray-600 w-full block p-3 rounded-lg">
+                        Payment Details
+                    </a>
+                </li>
+                <li class="w-full">
+                    <a href="/my-ads.html"
+                        class="text-xs text-gray-600 bg-[#909496] w-full block p-3 rounded-lg block text-white">My Ads
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-[80%] min-h-[62vh] bg-white p-5 relative border-b">
+
+            <div class="w-full my-3 flex justify-end gap-2 items-center">
+                <label for="myAds" class="text-xs text-gray-600 font-medium relative -bottom-0.5">Only Active</label>
+                <!-- From Uiverse.io by PriyanshuGupta28 -->
+                <div class="checkbox-wrapper-51">
+                    <input id="cbx-51" type="checkbox">
+                    <label class="toggle" for="cbx-51">
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+            <div class="w-full flex items-center justify-start gap-2 flex-wrap">
+                <button type="button" class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">All
+                </button>
+
+                <button type="button" class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">Rent
+                </button>
+                <button type="button" class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">Sale
+                </button>
+                <button type="button"
+                    class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">Commercial-Rent
+                </button>
+                <button type="button"
+                    class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">Commercial-Sale
+                </button>
+                <button type="button" class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">PG/Hostel
+                </button>
+                <button type="button" class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">Flatmates
+                </button>
+                <button type="button" class="px-3 py-1.5 border rounded-md text-xs text-gray-600 font-medium">Land/Plot
+                </button>
+            </div>
+
+            <div class="flex justify-center text-center pt-28">
+                <p class="text-sm font-semibold">No Properties Posted</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer start -->
+    <footer class="w-full py-10 lg:pt-20 px-6 2xl:px-80 bg-white">
+        <section class="w-full flex flex-col items-center gap-6">
+            <div class="flex flex-col items-center gap-4">
+                <a href="/">
+                    <img src="/assets/images/logo.svg" alt="logo" class="w-[220px] leading-none m-0">
+                </a>
+                <p class="text-sm secondary-text lg:w-[60%] text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa blanditiis quia exercitationem
+                    vitae obcaecati recusandae, inventore sapiente enim qui!
+                </p>
+
+            </div>
+            <div class="">
+                <ul class="flex items-center justify-center gap-4 lg:gap-10 mx-auto flex-wrap">
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Home</a></li>
+                    <li><a href="/" class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">About
+                            Us</a></li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Careers</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Testimonials</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Sitemap</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">FAQs</a></li>
+                    <li><a href="/"
+                            class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Privacy
+                            Policy</a>
+                    </li>
+                    <li><a href="/" class="text-sm hover:text-[#F23252] transition-all duration-300 text-gray-500">Terms
+                            &
+                            Conditions</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-start gap-4">
+                <a href="/">
+                    <img src="/assets/images/download-on-the-app-store.png" alt="download-on-the-app-store"
+                        class="w-32 h-[50px] object-cover">
+                </a>
+                <a href="/">
+                    <img src="/assets/images/download-on-the-google-play.png" alt="download-on-the-google-play"
+                        class="w-32 h-[45px] rounded-xl object-cover">
+                </a>
+            </div>
+        </section>
+        <section class="w-full border-t mt-6 pt-5 flex flex-col items-center gap-4 justify-between">
+            <div>
+                <ul class="flex items-center justify-end gap-5 flex-wrap">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i
+                            class="bi bi-facebook text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.x.com" target="_blank">
+                        <i
+                            class="bi bi-twitter text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i
+                            class="bi bi-instagram text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <i
+                            class="bi bi-linkedin text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i
+                            class="bi bi-youtube text-xl text-gray-500 hover:text-[#F23252] transition-all duration-300"></i>
+                    </a>
+                </ul>
+            </div>
+            <p class="secondary-text text-sm text-center">© 2013-25 NoBroker Technologies Solutions Pvt. Ltd.</p>
+        </section>
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>
