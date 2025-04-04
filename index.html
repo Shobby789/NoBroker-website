@@ -30,12 +30,13 @@
                     class="text-[13px] border-[1.5px] border-[#F23252] px-3 py-1.5 text-white bg-[#F23252]">
                     Post Your Property
                 </a>
-                <button type="button" class="flex items-center gap-2 group relative">
+                <!-- profile dropdown -->
+                <!-- <button type="button" class="flex items-center gap-2 group relative">
                     <img src="/assets/images/user.png" alt="User Profile"
                         class="w-8 h-8 bg-gray-300 rounded-full object-cover">
                     <span class="text-[13px] text-gray-400">Ethan Smit...</span>
                     <i class="bi bi-chevron-down secondary-text group-hover:rotate-180 transition-all duration-300"></i>
-                    <!-- profile dropdown -->
+
                     <div
                         class="w-[230px] bg-white shadow-2xl min-h-[150px] py-2 absolute top-8 right-0 text-start group-hover:block hidden transition-all duration-500 z-30">
                         <ul class="w-full flex flex-col items-start px-4 py-2">
@@ -57,11 +58,15 @@
                             </li>
                         </ul>
                     </div>
-                </button>
-                <div class="h-5 border"></div>
-                <button>
+                </button> -->
+                <!-- <div class="h-5 border"></div> -->
+                <!-- Notification page url -->
+                <!-- <button>
                     <i class="bi bi-bell secondary-text"></i>
-                </button>
+                </button> -->
+                <button id="openSignupBtn" class="text-gray-600 font-medium text-xs">Sign up</button>
+                <div class="h-5 border"></div>
+                <button id="openLoginBtn" class="text-gray-600 font-medium text-xs">Log in</button>
                 <div class="h-5 border"></div>
                 <button type="button" class="secondary-text flex items-center gap-1 group relative">
                     <i class="bi bi-list text-xl"></i>
@@ -101,16 +106,16 @@
     <!-- navbar -->
 
     <!-- hero section start -->
-    <main class="w-full px-6 2xl:px-20 py-2">
-        <div class="w-full flex flex-col items-center justify-center gap-10 min-h-screen hero px-4">
-            <h1 class="text-center leading-none text-[2rem] lg:text-[5vw] font-semibold lg:w-[70%]">
+    <main class="w-full px-6 2xl:px-20 py-12 lg:py-20 2xl:pt-40">
+        <div class="w-full flex flex-col items-center justify-start gap-10 px-4">
+            <h1 class="text-center leading-none text-[2rem] lg:text-[3vw] font-semibold lg:w-[70%]">
                 World's Largest NoBrokerage Property Site
             </h1>
             <div class="">
                 <div class="bg-[#F23252] px-4 py-4 flex items-center justify-center gap-3">
-                    <a href="/" class="text-xs lg:text-sm font-medium">Home Interiors</a>
+                    <a href="/" class="text-xs lg:text-sm font-medium text-white">Home Interiors</a>
                     <div class="h-5 border border-gray-200"></div>
-                    <a href="" class="text-xs lg:text-sm font-medium">45-Days Guarantee</a>
+                    <a href="" class="text-xs lg:text-sm font-medium text-white">45-Days Guarantee</a>
                 </div>
             </div>
             <div class="w-full flex flex-col items-center">
@@ -209,6 +214,16 @@
                         </label>
                     </div>
                 </div>
+            </div>
+
+            <div class="w-full flex flex-col items-center gap-2 mt-10">
+                <div class="mb-2 flex items-center gap-4">
+                    <div class="w-[100px] border border-gray-200 hidden md:block"></div>
+                    <p class="text-xs text-gray-600">Are you a Property Owner?</p>
+                    <div class="w-[100px] border border-gray-200 hidden md:block"></div>
+                </div>
+                <button type=" button" class="bg-[#F23252] text-white px-4 py-2 font-medium text-xs">Post Free Property
+                    Ad</button>
             </div>
         </div>
     </main>
@@ -501,6 +516,98 @@
     </section>
     <!-- CTA section end -->
 
+    <!-- Login Popup start -->
+    <div id="loginOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="loginPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/icons/house-image.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full lg:w-[80%] mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <button type="button"
+                            class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Login Popup end -->
+
+    <!-- Signup Popup start -->
+    <div id="signupOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="signupPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/icons/house-image.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <button type="button"
+                            class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Popup end -->
+
     <!-- footer start -->
     <footer class="w-full py-10 lg:pt-20 px-6 2xl:px-80 bg-white">
         <section class="w-full flex flex-col items-center gap-6">
@@ -589,7 +696,7 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1, // Default: 3 slides for larger screens
+            slidesPerView: 1, // Default: 3 slides for larger
             spaceBetween: 40, // Space between slides
             autoplay: {
                 delay: 4000, // Auto-slide every 3 seconds

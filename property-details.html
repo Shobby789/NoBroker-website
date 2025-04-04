@@ -774,6 +774,98 @@
     </footer>
     <!-- footer end -->
 
+    <!-- Login Popup start -->
+    <div id="loginOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="loginPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/icons/house-image.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full lg:w-[80%] mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <button type="button"
+                            class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Login Popup end -->
+
+    <!-- Signup Popup start -->
+    <div id="signupOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="signupPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/icons/house-image.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <button type="button"
+                            class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Popup end -->
+
 
     <script src="/js/index.js"></script>
 

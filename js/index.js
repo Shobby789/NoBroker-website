@@ -39,3 +39,51 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// login popup
+const openBtn = document.getElementById("openLoginBtn");
+const overlay = document.getElementById("loginOverlay");
+const popup = document.getElementById("loginPopup");
+
+// Open popup
+openBtn.addEventListener("click", () => {
+  overlay.classList.remove("hidden");
+});
+
+// Close popup if clicked outside the popup content
+overlay.addEventListener("click", (e) => {
+  if (!popup.contains(e.target)) {
+    overlay.classList.add("hidden");
+  }
+});
+
+// Optional: Close on ESC key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    overlay.classList.add("hidden");
+  }
+});
+
+// signup popup
+const openSignupBtn = document.getElementById("openSignupBtn");
+const signupOverlay = document.getElementById("signupOverlay");
+const signupPopup = document.getElementById("signupPopup");
+
+// Open popup
+openSignupBtn.addEventListener("click", () => {
+  signupOverlay.classList.remove("hidden");
+});
+
+// Close popup if clicked outside the popup content
+signupOverlay.addEventListener("click", (e) => {
+  if (!signupPopup.contains(e.target)) {
+    signupOverlay.classList.add("hidden");
+  }
+});
+
+// Optional: Close on ESC key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    signupOverlay.classList.add("hidden");
+  }
+});
