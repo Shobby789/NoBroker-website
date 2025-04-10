@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoBroker</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="w-full shadow-md sticky top-0 z-40 bg-white">
+        <nav class="w-full flex items-center justify-between h-[50px] lg:h-[60px] px-3 relative">
+            <a href="/" class="">
+                <img src="/assets/images/logo.svg" alt="Company Logo" class="w-[110px] lg:w-[170px]">
+            </a>
+            <div class="hidden lg:flex items-center justify-end gap-4">
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[14px] text-gray-400 font-normal border-[1.5px] border-gray-200 px-1.5 py-1 flex items-center gap-2 rounded-[2px]">
+                    <img src="/assets/icons/payrent-icon.png" alt="payrent-icon" width="20">
+                    <div class="border border-gray-200 h-5"></div>
+                    Pay Rent
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[14px] font-normal border-[1.5px] border-[#009587] px-2.5 py-1 text-white green-bg rounded-[2px]">
+                    Post Your Property
+                </a>
+                <!-- profile dropdown -->
+                <button type="button" class="flex items-center gap-2 group relative">
+                    <img src="/assets/images/user.png" alt="User Profile"
+                        class="w-8 h-8 bg-gray-300 rounded-full object-cover">
+                    <span class="text-[13px] text-gray-400">Ethan Smit...</span>
+                    <i class="bi bi-chevron-down secondary-text group-hover:rotate-180 transition-all duration-300"></i>
+
+                    <div
+                        class="w-[230px] bg-white shadow-2xl min-h-[150px] py-2 absolute top-8 right-0 text-start group-hover:block hidden transition-all duration-500 z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/profile.html"
+                                    class="secondary-text text-sm border-b w-full block py-3">Profile</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">My Chats</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Residential Plan
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Commercial Plan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+                <div class="h-5 border"></div>
+                <!-- Notification page url -->
+                <button>
+                    <i class="bi bi-bell secondary-text"></i>
+                </button>
+                <div class="h-5 border"></div>
+                <!-- menu button -->
+                <button type="button" class="text-gray-700 flex items-center gap-0.5 group relative">
+                    <i class="bi bi-list text-base"></i>
+                    <span class="text-sm">Menu</span>
+                    <div
+                        class="w-[200px] bg-white shadow-2xl min-h-[150px] absolute top-6 right-0 text-start group-hover:block hidden transition-all duration-500 border z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Post Your
+                                    Property</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Rental
+                                    Agreement</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Painting & Cleaning
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Packers and Movers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+            <!-- mobile menu button -->
+            <button type="button" class="lg:hidden block secondary-text">
+                <i class="bi bi-list text-lg"></i>
+            </button>
+
+        </nav>
+    </header>
+    <!-- navbar -->
+
+    <!-- hero section start -->
+    <main class="w-full px-6 2xl:px-20 pt-12 pb-8 lg:pt-20">
+        <div class="w-full flex flex-col items-center justify-start gap-6 px-4">
+            <h1 class="text-center leading-none text-[32px] font-[400] heading-color">
+                World's Largest NoBrokerage Property Site
+            </h1>
+            <div class="">
+                <div class="bg-[#fff0d9] px-4 py-4 flex items-center justify-center gap-3">
+                    <a href="/" class="text-xs lg:text-sm text-black flex items-center gap-2 text-gray-600">
+                        <img src=" /assets/icons/HomeInteriorHome.svg" alt="home-interior-icon" width="34">
+                        Home Interiors</a>
+                    <div class="h-5 border border-gray-500 opacity-85"></div>
+                    <a href="" class="text-xs lg:text-sm text-black flex items-center gap-2 text-gray-600">
+                        <img src=" /assets/icons/HomeInteriorDeliveryHome.svg" alt="home-interior-icon" width="24">
+                        45-Days Guarantee
+                    </a>
+                </div>
+            </div>
+            <div class="w-full flex flex-col items-center">
+                <div class="flex">
+                    <button onclick="showFilter('buy', this)"
+                        class="font-semibold text-[#F23252] bg-white w-[80px] lg:w-[100px] lg:w-[120px] py-2 border border-b-[4px] border-b-[#F23252] text-sm lg:text-base rounded-tl active-tab">Buy</button>
+                    <button onclick="showFilter('rent', this)"
+                        class="font-semibold bg-white text-gray-400/70 w-[80px] lg:w-[100px] lg:w-[120px] py-2 border border-l-white border-b-white text-sm lg:text-base">Rent</button>
+                    <button onclick="showFilter('commercial', this)"
+                        class="font-semibold bg-white text-gray-400/70 w-[100px] lg:w-[120px] py-2 border border-b-white text-sm lg:text-base rounded-tr">Commercial</button>
+                </div>
+                <!-- laptop search bar -->
+                <div class="w-full lg:w-[70%] 2xl:w-[50%] hidden lg:flex">
+                    <select name="city" id="city"
+                        class="h-[50px] text-gray-800 px-2 w-[200px] text-[16px] font-medium outline-none border hidden lg:block rounded-tl">
+                        <option value="Bangalore">
+                            Bangalore
+                        </option>
+                        <option value="Pune">
+                            Pune
+                        </option>
+                        <option value="Chennai">
+                            Chennai
+                        </option>
+                        <option value="Hyderabad">
+                            Hyderabad
+                        </option>
+                        <option value="Delhi">
+                            Delhi
+                        </option>
+                    </select>
+                    <input type="text"
+                        class="h-[50px] text-gray-500 px-4 text-[16px] font-normal outline-none w-full bg-white border placeholder:text-gray-500"
+                        placeholder="Search upto 3 localities or landmarks">
+                    <button type="button"
+                        class="primary-bg text-white font-medium text-lg h-[50px] px-10 flex items-center gap-2 rounded-tr">
+                        <i class="bi bi-search opacity-85"></i>
+                        Search
+                    </button>
+                </div>
+                <!-- buy search filters -->
+                <div id="buy-filters" class="w-full flex justify-center">
+                    <div
+                        class="w-full lg:w-[70%] border border-t-none rounded-b 2xl:w-[50%] bg-gray-50 h-[50px] hidden lg:flex items-center px-6 gap-2 justify-start">
+                        <label for="fullHouse" class="flex items-center gap-1 min-w-[100px]">
+                            <input type="radio" name="fullHouse" id="fullHouse" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">Full House</span>
+                        </label>
+                        <label for="landPlot" class="flex items-center gap-1">
+                            <input type="radio" name="landPlot" id="landPlot" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">Land/Plot</span>
+                        </label>
+                        <select name="city" id="city"
+                            class="h-[40px] text-gray-500 px-1 w-[170px] text-xs font-normal outline-none border">
+                            <option value="bhkType">
+                                BHK Type
+                            </option>
+                            <option value="Pune">
+                                Pune
+                            </option>
+                            <option value="Chennai">
+                                Chennai
+                            </option>
+                            <option value="Hyderabad">
+                                Hyderabad
+                            </option>
+                            <option value="Delhi">
+                                Delhi
+                            </option>
+                        </select>
+                        <select name="city" id="city"
+                            class="h-[40px] text-gray-500 px-1 w-[170px] text-xs font-normal outline-none border">
+                            <option value="bhkType">
+                                Property Status
+                            </option>
+                            <option value="Pune">
+                                Pune
+                            </option>
+                            <option value="Chennai">
+                                Chennai
+                            </option>
+                            <option value="Hyderabad">
+                                Hyderabad
+                            </option>
+                            <option value="Delhi">
+                                Delhi
+                            </option>
+                        </select>
+                        <div
+                            class="h-[40px] text-gray-500 px-2 w-[170px] bg-gray-50 text-sm font-medium outline-none border flex items-center gap-1">
+                            <label for="landPlot" class="flex items-center gap-1">
+                                <input type="checkbox" name="landPlot" id="landPlot"
+                                    class="w-3.5 h-3.5 border-2 border-gray-300">
+                                <span class="text-gray-500 text-[13px] font-normal">New Builder Projects</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- rent search filters -->
+                <div id="rent-filters" class="w-full flex justify-center">
+                    <div
+                        class="w-full lg:w-[70%] 2xl:w-[50%] bg-gray-50 h-[50px] hidden lg:flex items-center px-6 gap-2 justify-start">
+                        <label for="fullHouse" class="flex items-center gap-1 min-w-[90px]">
+                            <input type="radio" name="fullHouse" id="fullHouse" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">Full House</span>
+                        </label>
+                        <label for="landPlot" class="flex items-center gap-1">
+                            <input type="radio" name="landPlot" id="landPlot" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">PG/Hostel</span>
+                        </label>
+                        <label for="landPlot" class="flex items-center gap-1">
+                            <input type="radio" name="landPlot" id="landPlot" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">Flatmates</span>
+                        </label>
+                        <select name="city" id="city"
+                            class="h-[40px] text-gray-500 px-1 w-[170px] text-xs font-normal outline-none border">
+                            <option value="bhkType">
+                                BHK Type
+                            </option>
+                            <option value="Pune">
+                                Pune
+                            </option>
+                            <option value="Chennai">
+                                Chennai
+                            </option>
+                            <option value="Hyderabad">
+                                Hyderabad
+                            </option>
+                            <option value="Delhi">
+                                Delhi
+                            </option>
+                        </select>
+                        <select name="city" id="city"
+                            class="h-[40px] text-gray-500 px-1 w-[170px] text-xs font-normal outline-none border">
+                            <option value="bhkType">
+                                Availability
+                            </option>
+                            <option value="Pune">
+                                Immediate
+                            </option>
+                            <option value="Chennai">
+                                Within 15 days
+                            </option>
+                            <option value="Chennai">
+                                Within 30 days
+                            </option>
+                            <option value="Delhi">
+                                After 30 days
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <!-- commercial search filters -->
+                <div class="w-full flex justify-center" id="commercial-filters">
+                    <div
+                        class="w-full lg:w-[70%] 2xl:w-[50%] bg-gray-50 h-[50px] hidden lg:flex items-center px-6 justify-start">
+                        <label for="fullHouse" class="flex items-center gap-1 min-w-[90px]">
+                            <input type="radio" name="fullHouse" id="fullHouse" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">Full House</span>
+                        </label>
+                        <label for="landPlot" class="flex items-center gap-1">
+                            <input type="radio" name="landPlot" id="landPlot" class="w-4 h-4">
+                            <span class="text-gray-500 text-sm">Land/Plot</span>
+                        </label>
+                        <select name="city" id="city"
+                            class="h-[40px] text-gray-500 px-1 w-[170px] text-xs font-normal outline-none border ml-3">
+                            <option value="bhkType">
+                                Property Type
+                            </option>
+                            <option value="Pune">
+                                Office Space
+                            </option>
+                            <option value="Chennai">
+                                Co-Working
+                            </option>
+                            <option value="Hyderabad">
+                                Shop
+                            </option>
+                            <option value="Delhi">
+                                Showroom
+                            </option>
+                            <option value="Hyderabad">
+                                Industrial Building
+                            </option>
+                            <option value="Delhi">
+                                Gowdown/Warehouse
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <!-- mobile search bar -->
+                <div
+                    class="w-full bg-white border h-[50px] lg:hidden flex items-center p-1 rounded-lg justify-between gap-2">
+                    <input type="text" placeholder="Search upto 3 localities or landmarks"
+                        class="text-sm outline-none w-full text-gray-400/70 px-2">
+                    <button type="button" class="h-full bg-[#F23252] w-[45px] rounded-lg"><i
+                            class="bi bi-search text-gray-200"></i></button>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col items-center gap-2 mt-6">
+                <div class="mb-2 flex items-center gap-4">
+                    <div class="w-[100px] border border-gray-200 hidden md:block"></div>
+                    <p class="text-base text-gray-600">Are you a Property Owner?</p>
+                    <div class="w-[100px] border border-gray-200 hidden md:block"></div>
+                </div>
+                <button type="button" class="green-bg text-white px-6 py-2 rounded font-medium text-base">
+                    Post Free Property Ad
+                </button>
+            </div>
+
+        </div>
+    </main>
+    <!-- hero section end -->
+
+    <div
+        class="w-full flex flex-col md:flex-row tems-center justify-center flex-wrap gap-3 text-white bg-[#384d6c] py-3 px-8">
+        <img src="/assets/icons/nobroker-loan-icon.png" alt="nobroker-loan-icon" width="26">
+        <p class="text-sm font-light">
+            Do you know how much <span class="font-semibold">loan</span> you can get? Get maximum with <a href="/"><span
+                    class="font-semibold">NoBroker</span></a>
+        </p>
+        <a href="/" class="bg-white text-xs px-2 py-1.5 rounded text-black w-[110px] text-center">Check Eligibility</a>
+    </div>
+
+    <!-- Why you should work with us start -->
+    <section class="w-full pt-4 pb-14 px-4 lg:px-10">
+        <div class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+            <div class="flex flex-col items-center gap-2 hover:cursor-pointer">
+                <div class="bg-pink-50 py-1 px-2.5 font-semibold rounded-full text-xs text-gray-700">
+                    Lowest Price
+                </div>
+                <img src="/assets/icons/builder-projects.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px]">
+                <h2 class=" text-sm font-normal text-gray-600 ">Builder Projects</h2>
+            </div>
+            <div class="flex flex-col items-center gap-2 hover:cursor-pointer">
+                <div class="bg-pink-50 py-1 px-2.5 font-semibold rounded-full text-xs text-gray-700">
+                    New Offers
+                </div>
+                <img src="/assets/icons/sale-agreement.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px]">
+                <h2 class=" text-sm font-normal text-gray-600 ">Sale Agreement</h2>
+            </div>
+            <div class="flex flex-col items-center gap-2 hover:cursor-pointer">
+                <div class="bg-pink-50 py-1 px-2.5 font-semibold rounded-full text-xs text-gray-700">
+                    Flat 30% off
+                </div>
+                <img src="/assets/icons/home-loan.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px] h-[60px]">
+                <h2 class=" text-sm font-normal text-gray-600 ">Home Loan</h2>
+            </div>
+            <div class="flex flex-col items-center gap-2 hover:cursor-pointer">
+                <div class="bg-white py-1 px-2 rounded-lg text-xs text-white">
+                    New
+                </div>
+                <img src="/assets/icons/property-legal-services.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px]">
+                <h2 class=" text-sm font-normal text-gray-600 ">Property Legal Services</h2>
+            </div>
+            <div class="flex flex-col items-center gap-2 hover:cursor-pointer">
+                <div class="bg-pink-50 py-1 px-2.5 font-semibold rounded-full text-xs text-gray-700">
+                    Sale is live!
+                </div>
+                <img src="/assets/icons/home-interiors.svg" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px]">
+                <h2 class=" text-sm font-normal text-gray-600 ">Home Interiors</h2>
+            </div>
+            <div class="flex flex-col items-center gap-2 hover:cursor-pointer">
+                <div class="bg-white py-1 px-2 rounded-lg text-xs text-white">
+                    New
+                </div>
+                <img src="/assets/icons/nobroker-for-nris.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px]">
+                <h2 class=" text-sm font-normal text-gray-600 ">NoBroker For NRIs</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Why you should work with us end -->
+
+    <!-- Why use NoBroker start -->
+    <section class="w-full pb-10">
+        <div class="w-full flex items-center justify-center gap-8 px-4 lg:px-0">
+            <div class="w-full flex items-center">
+                <div class="w-full border-gray-400 hidden lg:block opacity-75"
+                    style="border: 0.5px solid rgb(203, 203, 203);">
+                </div>
+                <div class="w-6 h-6 border border-pink-200 rounded-full"></div>
+            </div>
+            <h2 class="heading-color text-center whitespace-nowrap">Why Use NoBroker</h2>
+            <div class="w-full flex items-center">
+                <div class="w-6 h-6 border border-pink-200 rounded-full"></div>
+                <div class="w-full border-gray-400 hidden lg:block opacity-75"
+                    style="border: 0.5px solid rgb(203, 203, 203);">
+                </div>
+            </div>
+        </div>
+        <div class="w-full grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5 mt-10 px-4 lg:px-10">
+            <div class="flex flex-col items-center gap-1 hover:cursor-pointer p-0 lg:px-10 text-center">
+                <img src="/assets/icons/avoid-broker.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px] h-[60px]">
+                <h2 class="mt-2 text-gray-600 text-base lg:text-lg">Avoid Brokers</h2>
+                <p class="text-center text-[14px] font-normal text-gray-600 ">
+                    We directly connect you to verified owners to save brokerage
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-1 hover:cursor-pointer p-0 lg:px-10 text-center">
+                <img src="/assets/icons/free-listing.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px] h-[60px]">
+                <h2 class="mt-2 text-gray-600 text-base lg:text-lg">Free Listing</h2>
+                <p class="text-center text-[14px] font-normal text-gray-600 ">
+                    Easily listing process.Also using WhatsApp
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-1 hover:cursor-pointer p-0 lg:px-10 text-center">
+                <img src="/assets/icons/shortlist.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px] h-[60px]">
+                <h2 class="mt-2 text-gray-600 text-base lg:text-lg">Shortlist without Visit</h2>
+                <p class="text-center text-[14px] font-normal text-gray-600 ">
+                    Extensive Information makes it easy
+                </p>
+            </div>
+            <div class="flex flex-col items-center gap-1 hover:cursor-pointer p-0 lg:px-10 text-center">
+                <img src="/assets/icons/rental-agreement.png" alt="NoBroker builder projects"
+                    class="hover:scale-110 transition-all duration-300 h-[60px] h-[60px]">
+                <h2 class="mt-2 text-gray-600 text-base lg:text-lg">Rental Agreement</h2>
+                <p class="text-center text-[14px] font-normal text-gray-600 ">
+                    Assistance in creating Rental agreement & Paper work
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Why use NoBroker end -->
+
+    <!-- we make a big difference -->
+    <section class="w-full py-10 bg-gray-100">
+        <div class="w-full flex items-center justify-center gap-8 px-4 lg:px-0">
+            <div class="w-full flex items-center">
+                <div class="w-full border-gray-400 hidden lg:block opacity-75"
+                    style="border: 0.5px solid rgb(203, 203, 203);">
+                </div>
+                <div class="w-6 h-6 border border-pink-200 rounded-full"></div>
+            </div>
+            <h2 class="heading-color text-center lg:whitespace-nowrap">
+                NoBroker Business Assist Plan For Builders
+            </h2>
+            <div class="w-full flex items-center">
+                <div class="w-6 h-6 border border-pink-200 rounded-full"></div>
+                <div class="w-full border-gray-400 hidden lg:block opacity-75"
+                    style="border: 0.5px solid rgb(203, 203, 203);">
+                </div>
+            </div>
+        </div>
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-10 px-4 mt-10">
+            <div class="flex flex-col items-center justify-center">
+                <img src="/assets/icons/business-assist-plan-image.png" alt=" business-assist-plan-image">
+            </div>
+            <div class="flex flex-col items-start justify-center">
+                <p class="text-gray-600 text-base">Get in touch with us to Sell or Rent Your Projects</p>
+                <div class="mt-7">
+                    <a href="/"
+                        class="primary-bg text-white text-sm font-normal px-4 py-3 block w-[120px] text-center">Enquire
+                        Now</a>
+                    <p class="text-gray-600 text-sm mt-1">For Builder Enquiries: +91 91080 50400</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- we make a big difference -->
+
+    <!-- we make a big difference start -->
+    <section class="w-full py-10">
+        <div class="w-full flex items-center justify-center gap-8 px-4 lg:px-0">
+            <div class="w-full flex items-center">
+                <div class="w-full border-gray-400 hidden lg:block opacity-75"
+                    style="border: 0.5px solid rgb(203, 203, 203);">
+                </div>
+                <div class="w-6 h-6 border border-pink-200 rounded-full"></div>
+            </div>
+            <h2 class="heading-color text-center whitespace-nowrap">
+                We Make A Difference
+            </h2>
+            <div class="w-full flex items-center">
+                <div class="w-6 h-6 border border-pink-200 rounded-full"></div>
+                <div class="w-full border-gray-400 hidden lg:block opacity-75"
+                    style="border: 0.5px solid rgb(203, 203, 203);">
+                </div>
+            </div>
+        </div>
+        <div class="w-full mt-10 gap-y-10 flex items-center justify-evenly flex-wrap gap-10">
+            <div class="flex flex-col items-center gap-5">
+                <div
+                    class="text-center w-[110px] h-[110px] lg:w-[170px] lg:h-[170px] rounded-full border-2 border-[#F23252] flex items-center justify-center">
+                    <p class="text-[#F23252] text-[7vw] md:text-[40px] font-normal">₹130 cr+</p>
+                </div>
+                <p class="text-gray-600 text-lg lg:text-[22px]">Brokerage saved monthly</p>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <div
+                    class="text-center w-[110px] h-[110px] lg:w-[170px] lg:h-[170px] rounded-full border-2 border-[#F23252] flex items-center justify-center">
+                    <p class="text-[#F23252] text-[7vw] md:text-[40px] font-normal">30 Lakh+</p>
+                </div>
+                <p class="text-gray-600 text-lg lg:text-[22px]">Customers Connected Monthly</p>
+            </div>
+            <div class="flex flex-col items-center gap-5">
+                <div
+                    class="text-center w-[110px] h-[110px] lg:w-[170px] lg:h-[170px] rounded-full border-2 border-[#F23252] flex items-center justify-center">
+                    <p class="text-[#F23252] text-[7vw] md:text-[40px] font-normal">2 Lakh+</p>
+                </div>
+                <p class="text-gray-600 text-lg lg:text-[22px]">New Listings Monthly</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials start -->
+    <section class="w-full py-10 px-4 bg-[#334a5c]">
+        <h3 class="text-[2rem] lg:text-[2rem] font-normal text-center tracking-tight text-center mt-4 text-white">
+            Our Customers Loves us
+        </h3>
+        <div class="w-full flex justify-center mt-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0ChlgxhXVws?si=oHAa0LGDGsPiwFZ7"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <section
+            class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:px-10 swiper mySwiper border-b h-[70vh] lg:h-[50vh] 2xl:h-[40vh]relative overflow-hidden">
+            <section
+                class="w-full swiper-wrapper h-[60vh] md:h-[60vh] lg:h-[45vh] 2xl:h-[32vh] flex items-end relative">
+                <div
+                    class="relative col-span-1 bg-[#f3f3f3] p-5 swiper-slide flex flex-col items-start gap-3 h-[230px]">
+                    <div class="w-full flex items-center justify-start gap-4">
+                        <img src="/assets/images/testimonial-user-picture.jpg" alt=""
+                            class="block rounded-full object-cover w-10 h-10">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="font-semibold text-xs text-gray-600">Roger Scott</p>
+                            <div class="flex items-center">
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600 font-semibold">Good App to Earn Money Online !</p>
+                        <p class="text-sm text-gray-600">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative col-span-1 bg-[#f3f3f3] p-5 swiper-slide flex flex-col items-start gap-3 h-[230px]">
+                    <div class="w-full flex items-center justify-start gap-4">
+                        <img src="/assets/images/testimonial-user-picture.jpg" alt=""
+                            class="block rounded-full object-cover w-10 h-10">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="font-semibold text-xs text-gray-600">Roger Scott</p>
+                            <div class="flex items-center">
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600 font-semibold">Good App to Earn Money Online !</p>
+                        <p class="text-sm text-gray-600">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative col-span-1 bg-[#f3f3f3] p-5 swiper-slide flex flex-col items-start gap-3 h-[230px]">
+                    <div class="w-full flex items-center justify-start gap-4">
+                        <img src="/assets/images/testimonial-user-picture.jpg" alt=""
+                            class="block rounded-full object-cover w-10 h-10">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="font-semibold text-xs text-gray-600">Roger Scott</p>
+                            <div class="flex items-center">
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600 font-semibold">Good App to Earn Money Online !</p>
+                        <p class="text-sm text-gray-600">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative col-span-1 bg-[#f3f3f3] p-5 swiper-slide flex flex-col items-start gap-3 h-[230px]">
+                    <div class="w-full flex items-center justify-start gap-4">
+                        <img src="/assets/images/testimonial-user-picture.jpg" alt=""
+                            class="block rounded-full object-cover w-10 h-10">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="font-semibold text-xs text-gray-600">Roger Scott</p>
+                            <div class="flex items-center">
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600 font-semibold">Good App to Earn Money Online !</p>
+                        <p class="text-sm text-gray-600">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative col-span-1 bg-[#f3f3f3] p-5 swiper-slide flex flex-col items-start gap-3 h-[230px]">
+                    <div class="w-full flex items-center justify-start gap-4">
+                        <img src="/assets/images/testimonial-user-picture.jpg" alt=""
+                            class="block rounded-full object-cover w-10 h-10">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="font-semibold text-xs text-gray-600">Roger Scott</p>
+                            <div class="flex items-center">
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600 font-semibold">Good App to Earn Money Online !</p>
+                        <p class="text-sm text-gray-600">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative col-span-1 bg-[#f3f3f3] p-5 swiper-slide flex flex-col items-start gap-3 h-[230px]">
+                    <div class="w-full flex items-center justify-start gap-4">
+                        <img src="/assets/images/testimonial-user-picture.jpg" alt=""
+                            class="block rounded-full object-cover w-10 h-10">
+                        <div class="flex flex-col items-start gap-1">
+                            <p class="font-semibold text-xs text-gray-600">Roger Scott</p>
+                            <div class="flex items-center">
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                                <i class="bi bi-star-fill text-sm text-[#009587]"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <p class="text-gray-600 font-semibold">Good App to Earn Money Online !</p>
+                        <p class="text-sm text-gray-600">
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                            Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                            there
+                            live the blind texts.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div
+                class="bg-white w-8 h-8 absolute right-0 top-1/2 -translate-y-1/2 z-20 rounded-full p-1 flex items-center justify-center cursor-pointer shadow-md swiper-button-next pt-1.5">
+                <i class="bi bi-arrow-right text-black text-lg"></i>
+            </div>
+            <div class=" bg-white w-8 h-8 absolute left-0 top-1/2 -translate-y-1/2 z-20 rounded-full p-1 flex
+                    items-center justify-center cursor-pointer shadow-md swiper-button-prev pt-1.5">
+                <i class="bi bi-arrow-left text-black text-lg"></i>
+            </div>
+            <!-- <div class="swiper-pagination mt-40"></div> -->
+        </section>
+        <div class="w-full flex justify-center mt-8">
+            <a href="#" class="text-white underline text-sm">More Testimonials</a>
+        </div>
+    </section>
+    <!-- Testimonials end -->
+
+    <!-- Download the app start -->
+    <section class="w-full pt-10 px-4">
+        <section class="w-full grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-40">
+            <section class="w-full flex items-center justify-center">
+                <img src="/assets/images/download-app-mockup.png" alt="download nobroker mobile app image"
+                    class="md:h-[40vh] lg:h-[60vh]">
+            </section>
+            <section class="w-full flex flex-col items-start justify-center">
+                <h2 class="text-[24px] lg:text-[34px] font-normal text-[#F23252] tracking-tight">Find A New Home On The
+                    Go</h2>
+                <p class="lg:text-xl lg:w-[90%] mt-7 text-gray-600">
+                    Download our app
+                </p>
+                <div class="text-gray-700 font-light">
+                    Where convenience is at your fingertip
+                </div>
+                <div class="flex items-center justify-start gap-4 mt-10">
+                    <a href="/">
+                        <img src="/assets/images/download-on-the-app-store.png" alt="download-on-the-app-store"
+                            class="lg:w-40 md:w-20 md:h-[35px] lg:h-[62px]">
+                    </a>
+                    <a href="/">
+                        <img src="/assets/images/download-on-the-google-play.png" alt="download-on-the-google-play"
+                            class="lg:w-40 h-[55px] md:w-20 md:h-[55px] rounded-xl">
+                    </a>
+                </div>
+            </section>
+        </section>
+    </section>
+    <!-- Download the app end -->
+
+    <!-- property locations start -->
+    <section class="w-full py-10">
+        <div class="w-full bg-gray-100 flex items-start overflow-x-auto">
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer bg-gray-200">
+                <p class=" text-gray-600 font-semibold">Properties & Flats for Sale</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Flats for Rent</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">PG / Hostels</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Flatmates</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Miscellaneous</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Commercial</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">New Projects & Plots</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Independent Houses & Villas</p>
+            </button>
+        </div>
+        <div
+            class="w-full bg-white flex items-start md:grid md:grid-cols-3 lg:grid-cols-5 overflow-x-auto px-4 lg:px-10">
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Bangalore</h3>
+                <div id="flats-sale-list" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Bangalore
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Koramangala
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Yelahanka
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Bangalore
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Bangalore
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Mumbai</h3>
+                <div id="flats-sale-mumbai" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Mumbai
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Kharghar
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Bandra
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Mumbai
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Mumbai
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Chennai</h3>
+                <div id="flats-sale-chennai" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Chennai
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Shalimar Bagh
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Velachery
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Chennai
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Chennai
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Pune</h3>
+                <div id="flats-sale-pune" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Pune
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Hadapsar
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Kondhwa
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Pune
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Pune
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Gurgaon</h3>
+                <div id="flats-sale-gurgaon" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Gurgaon
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Sector 31
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Sector 4
+                </a>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Hyderabad</h3>
+                <div id="flats-sale-hyderabad" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Hyderabad
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Gachibowli
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Kondapur
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Hyderabad
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Hyderabad
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Delhi</h3>
+                <div id="flats-sale-delhi" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Delhi
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Hauz Khas
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Janakpuri
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Builder Floor for Sale in Delhi
+                </h3>
+                <a href="#" class="footer-link">
+                    Builder Floor for Sale in Faridabad
+                </a>
+                <a href="#" class="footer-link">
+                    Builder Floor for Sale in Ghaziabad
+                </a>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Noida</h3>
+                <div id="flats-sale-noida" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Noida
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Noida Extension
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Sector 12 Noida
+                </a>
+                <a href="#" class="footer-link">
+                    Properties for Sale in Greater Noida
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Builder Floor for Sale in Greater Noida
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!-- property locations end -->
+
+    <!-- NoBroker Services -->
+    <section class="w-full border-t mb-10 py-10 px-4 lg:px-10">
+        <h2 class="text-[22px] font-semibold">NoBroker Services</h2>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6">
+            <div class="">
+                <h3>Buy</h3>
+                <div id="services-list-to-buy" class="mt-4 flex items-center flex-wrap gap-3"></div>
+            </div>
+            <div class="">
+                <h3>Rent</h3>
+                <div id="rent-services-list" class="mt-4 flex items-center flex-wrap gap-3"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA section start -->
+    <section class=" w-full py-6 px-4 bg-[#ededed] border-t border-b border-gray-300">
+        <section class="w-full flex flex-col md:flex-row justify-around gap-10 relative">
+            <div class=" flex flex-col items-center">
+                <h2 class="text-lg font-medium text-gray-600">Find Property</h2>
+                <p class="text-sm text-gray-600 mt-2 mb-4 text-center">Select from thousands of options, without
+                    brokerage.</p>
+                <a href="/" class="text-sm bg-[#464646] rounded font-semibold px-5 py-1 text-white">Find Now</a>
+            </div>
+            <div class="h-20 border border-gray-300 hidden md:block absolute left-1/2 -translate-x-1/2"></div>
+            <div class="flex flex-col items-center">
+                <h2 class="text-lg font-medium text-gray-600">List Your Property</h2>
+                <p class="text-sm text-gray-600 mt-2 mb-4 text-center">For Free. Without any brokerage.</p>
+                <a href="/" class="text-sm bg-[#464646] rounded font-semibold px-5 py-1 text-white">Free Posting</a>
+            </div>
+        </section>
+    </section>
+    <!-- CTA section end -->
+
+    <!-- footer start -->
+    <footer class="w-full pt-10 pb-5 px-4 bg-white">
+        <section class="w-full flex flex-col items-center gap-6">
+
+            <div class="">
+                <ul class="flex items-center justify-center gap-4 lg:gap-10 mx-auto flex-wrap">
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Home</a>
+                    </li>
+                    <li><a href="/" class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">About
+                            Us</a></li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Careers</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Testimonials</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Sitemap</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">FAQs</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Privacy
+                            Policy</a>
+                    </li>
+                    <li><a href="/" class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Terms
+                            &
+                            Conditions</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-center gap-10 border-t w-full pt-6">
+                <a href="/" class="">
+                    <img src="/assets/icons/android_download.svg" alt="download-on-the-app-store" class="w-28 h-[35px]">
+                </a>
+                <a href="/">
+                    <img src="/assets/icons/IOS_download.svg" alt="download-on-the-google-play" class="w-28 h-[40px]">
+                </a>
+            </div>
+        </section>
+        <section class="w-full pt-5 flex flex-col items-center gap-4 justify-between">
+            <div>
+                <ul class="flex items-center justify-end gap-5 lg:gap-10 flex-wrap">
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/facebook.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/twitter.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/instagram.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/linkedin.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.youtube.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/youtube.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <p class="secondary-text text-sm text-center">© 2013-25 NoBroker Technologies Solutions Pvt. Ltd.</p>
+        </section>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Login Popup start -->
+    <div id="loginOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="loginPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/images/signupHome.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full lg:w-[80%] mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <button type="button"
+                            class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Login Popup end -->
+
+    <!-- Signup Popup start -->
+    <div id="signupOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="signupPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/images/signupHome.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <button type="button"
+                            class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Popup end -->
+
+
+    <!-- help center button -->
+    <button type="button"
+        class="w-12 h-12 primary-bg rounded-full z-40 fixed bottom-5 lg:bottom-10 right-5 lg:right-10 flex items-center justify-center">
+        <img src="/assets/icons/help-center-button-icon.svg" alt="help-center-button-icon" width="32" height="32">
+    </button>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            slidesPerView: 1, // Default: 3 slides for larger
+            spaceBetween: 40, // Space between slides
+            autoplay: {
+                delay: 4000, // Auto-slide every 3 seconds
+                disableOnInteraction: false, // Keep autoplay active even after user interaction
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                480: { // Mobile devices
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: { // Tablets and above
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1100: { // Tablets and above
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+
+            }
+        });
+
+    </script>
+
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>

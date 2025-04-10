@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/property-details.css">
+    <!-- tailwind css link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <header class="w-full shadow-md sticky top-0 z-40 bg-white">
+        <nav class="w-full flex items-center justify-between h-[50px] lg:h-[60px] px-3 relative">
+            <a href="/" class="">
+                <img src="/assets/images/logo.svg" alt="Company Logo" class="w-[110px] lg:w-[170px]">
+            </a>
+            <div class="hidden lg:flex items-center justify-end gap-4">
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[14px] text-gray-400 font-normal border-[1.5px] border-gray-200 px-1.5 py-1 flex items-center gap-2 rounded-[2px]">
+                    <img src="/assets/icons/payrent-icon.png" alt="payrent-icon" width="20">
+                    <div class="border border-gray-200 h-5"></div>
+                    Pay Rent
+                </a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"
+                    class="text-[14px] font-normal border-[1.5px] border-[#009587] px-2.5 py-1 text-white green-bg rounded-[2px]">
+                    Post Your Property
+                </a>
+                <!-- profile dropdown -->
+                <button type="button" class="flex items-center gap-2 group relative">
+                    <img src="/assets/images/user.png" alt="User Profile"
+                        class="w-8 h-8 bg-gray-300 rounded-full object-cover">
+                    <span class="text-[13px] text-gray-400">Ethan Smit...</span>
+                    <i class="bi bi-chevron-down secondary-text group-hover:rotate-180 transition-all duration-300"></i>
+
+                    <div
+                        class="w-[230px] bg-white shadow-2xl min-h-[150px] py-2 absolute top-8 right-0 text-start group-hover:block hidden transition-all duration-500 z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/profile.html"
+                                    class="secondary-text text-sm border-b w-full block py-3">Profile</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">My Chats</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Residential Plan
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-sm border-b w-full block py-3">
+                                    My Commercial Plan
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+                <div class="h-5 border"></div>
+                <!-- Notification page url -->
+                <button>
+                    <i class="bi bi-bell secondary-text"></i>
+                </button>
+                <div class="h-5 border"></div>
+                <!-- menu button -->
+                <button type="button" class="text-gray-700 flex items-center gap-0.5 group relative">
+                    <i class="bi bi-list text-base"></i>
+                    <span class="text-sm">Menu</span>
+                    <div
+                        class="w-[200px] bg-white shadow-2xl min-h-[150px] absolute top-6 right-0 text-start group-hover:block hidden transition-all duration-500 border z-30">
+                        <ul class="w-full flex flex-col items-start px-4 py-2">
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Post Your
+                                    Property</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">Rental
+                                    Agreement</a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Painting & Cleaning
+                                </a>
+                            </li>
+                            <li class="w-full">
+                                <a href="/" class="secondary-text text-xs border-b w-full block py-3">
+                                    Packers and Movers
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </button>
+            </div>
+            <!-- mobile menu button -->
+            <button type="button" class="lg:hidden block secondary-text">
+                <i class="bi bi-list text-lg"></i>
+            </button>
+
+        </nav>
+    </header>
+    <!-- navbar -->
+
+    <section class="w-full flex items-start flex-col lg:flex-row">
+        <div class="w-full lg:w-[15%] bg-gray-50 border p-5 relative lg:min-h-[62vh]">
+            <h2 class="text-sm text-center font-semibold text-gray-600">Manage your account</h2>
+            <div class="w-full border my-3"></div>
+            <ul class="w-full flex flex-col items-start gap-1">
+                <li class="w-full">
+                    <a href="/profile.html"
+                        class="text-sm text-gray-600 w-full bg-[#909496] text-white block p-3 rounded-lg">
+                        Basic Profile
+                    </a>
+                </li>
+                <li class="w-full">
+                    <a href="/payment-details.html" class="text-sm text-gray-600 w-full block p-3 rounded-lg">
+                        Payment Details
+                    </a>
+                </li>
+                <li class="w-full"><a href="/my-ads.html" class="text-sm text-gray-600 w-full block p-3 rounded-lg">My
+                        Ads</a></li>
+            </ul>
+        </div>
+        <div class="w-full lg:w-[85%] bg-white p-5 relative border-b">
+            <h2 class="text-sm font-semibold text-gray-600">Edit Your Profile</h2>
+            <div class="w-full border my-3"></div>
+            <form class="w-full lg:w-1/2 flex flex-col items-start gap-3 mt-5">
+                <div class="flex items-center justify-start gap-4 w-full">
+                    <label for="name" class="text-sm text-gray-700 font-semibold w-[30%] text-end">Name</label>
+                    <input type="text" class="border outline-none p-3 text-sm text-gray-600 w-full">
+                </div>
+                <div class="flex items-center justify-start gap-4 w-full">
+                    <label for="email" class="text-sm text-gray-700 font-semibold w-[30%] text-end">Email
+                        Address</label>
+                    <input type="email" class="border outline-none p-3 text-sm text-gray-600 w-full">
+                </div>
+                <div class="flex items-center justify-start gap-4 w-full">
+                    <label for="name" class="text-sm text-gray-700 font-semibold w-[30%]"></label>
+                    <p>
+                        <button type="button" class="text-sm font-medium text-gray-400 underline">
+                            Click here to generate email verification mail.
+                        </button>
+                    </p>
+                </div>
+                <div class="flex items-center justify-start gap-4 w-full">
+                    <label for="name" class="text-sm text-gray-700 font-semibold w-[30%] text-end">Mobile Phone</label>
+                    <input type="number" class="border outline-none p-3 text-sm text-gray-600 w-full">
+                </div>
+                <div class="flex items-center justify-start gap-4 w-full">
+                    <label for="name" class="text-sm text-gray-700 font-semibold w-[30%]"></label>
+                    <p>
+                        <button type="button" class="text-sm font-medium text-gray-400 underline">
+                            Click here to generate password reset email.
+                        </button>
+                    </p>
+                </div>
+                <div class="w-full flex justify-end mt-5">
+                    <button type="submit" class="bg-[#F23252] text-white px-4 py-2 text-sm font-semibold">Save
+                        Profile</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- property locations start -->
+    <section class="w-full py-10">
+        <div class="w-full bg-gray-100 flex items-start overflow-x-auto">
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer bg-gray-200">
+                <p class=" text-gray-600 font-semibold">Properties & Flats for Sale</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Flats for Rent</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">PG / Hostels</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Flatmates</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Miscellaneous</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Commercial</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">New Projects & Plots</p>
+            </button>
+            <button type="button"
+                class="shrink-0 lg:shrink block lg:w-[200px] px-10 lg:px-4 text-center py-5 cursor-pointer">
+                <p class=" text-gray-600 font-semibold">Independent Houses & Villas</p>
+            </button>
+        </div>
+        <div
+            class="w-full bg-white flex items-start md:grid md:grid-cols-3 lg:grid-cols-5 overflow-x-auto px-4 lg:px-10">
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Bangalore</h3>
+                <div id="flats-sale-list" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Bangalore
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Koramangala
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Yelahanka
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Bangalore
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Bangalore
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Mumbai</h3>
+                <div id="flats-sale-mumbai" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Mumbai
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Kharghar
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Bandra
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Mumbai
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Mumbai
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Chennai</h3>
+                <div id="flats-sale-chennai" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Chennai
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Shalimar Bagh
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Velachery
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Chennai
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Chennai
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Pune</h3>
+                <div id="flats-sale-pune" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Pune
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Hadapsar
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Kondhwa
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Pune
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Pune
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Gurgaon</h3>
+                <div id="flats-sale-gurgaon" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Gurgaon
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Sector 31
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Sector 4
+                </a>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Hyderabad</h3>
+                <div id="flats-sale-hyderabad" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Hyderabad
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Gachibowli
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Kondapur
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Independent Floor for Sale in Hyderabad
+                </h3>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Bank Auction Properties for Sale in Hyderabad
+                </h3>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Delhi</h3>
+                <div id="flats-sale-delhi" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Delhi
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Hauz Khas
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Janakpuri
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Builder Floor for Sale in Delhi
+                </h3>
+                <a href="#" class="footer-link">
+                    Builder Floor for Sale in Faridabad
+                </a>
+                <a href="#" class="footer-link">
+                    Builder Floor for Sale in Ghaziabad
+                </a>
+            </div>
+            <div class="px-4 mt-4 w-[80%] md:w-full block shrink-0 lg:shrink">
+                <h3 class="text-gray-600 font-semibold text-base mb-4">Flats for Sale in Noida</h3>
+                <div id="flats-sale-noida" class="bg-white flex flex-col items-start gap-1.5"></div>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Properties for Sale in Noida
+                </h3>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Noida Extension
+                </a>
+                <a href="#" class="footer-link">
+                    Properties For Sale In Sector 12 Noida
+                </a>
+                <a href="#" class="footer-link">
+                    Properties for Sale in Greater Noida
+                </a>
+                <h3 class="text-gray-600 font-semibold text-sm my-4 leading-none">
+                    Builder Floor for Sale in Greater Noida
+                </h3>
+            </div>
+        </div>
+    </section>
+    <!-- property locations end -->
+
+    <!-- NoBroker Services -->
+    <section class="w-full border-t mb-10 py-10 px-4 lg:px-10">
+        <h2 class="text-[22px] font-semibold">NoBroker Services</h2>
+        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6">
+            <div class="">
+                <h3>Buy</h3>
+                <div id="services-list-to-buy" class="mt-4 flex items-center flex-wrap gap-3"></div>
+            </div>
+            <div class="">
+                <h3>Rent</h3>
+                <div id="rent-services-list" class="mt-4 flex items-center flex-wrap gap-3"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- CTA section start -->
+    <section class=" w-full py-6 px-4 bg-[#ededed] border-t border-b border-gray-300">
+        <section class="w-full flex flex-col md:flex-row justify-around gap-10 relative">
+            <div class=" flex flex-col items-center">
+                <h2 class="text-lg font-medium text-gray-600">Find Property</h2>
+                <p class="text-sm text-gray-600 mt-2 mb-4 text-center">Select from thousands of options, without
+                    brokerage.</p>
+                <a href="/" class="text-sm bg-[#464646] rounded font-semibold px-5 py-1 text-white">Find Now</a>
+            </div>
+            <div class="h-20 border border-gray-300 hidden md:block absolute left-1/2 -translate-x-1/2"></div>
+            <div class="flex flex-col items-center">
+                <h2 class="text-lg font-medium text-gray-600">List Your Property</h2>
+                <p class="text-sm text-gray-600 mt-2 mb-4 text-center">For Free. Without any brokerage.</p>
+                <a href="/" class="text-sm bg-[#464646] rounded font-semibold px-5 py-1 text-white">Free Posting</a>
+            </div>
+        </section>
+    </section>
+    <!-- CTA section end -->
+
+    <!-- footer start -->
+    <footer class="w-full pt-10 pb-5 px-4 bg-white">
+        <section class="w-full flex flex-col items-center gap-6">
+
+            <div class="">
+                <ul class="flex items-center justify-center gap-4 lg:gap-10 mx-auto flex-wrap">
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Home</a>
+                    </li>
+                    <li><a href="/" class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">About
+                            Us</a></li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Careers</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Testimonials</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Sitemap</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">FAQs</a>
+                    </li>
+                    <li><a href="/"
+                            class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Privacy
+                            Policy</a>
+                    </li>
+                    <li><a href="/" class="text-lg hover:text-[#464646] transition-all duration-300 text-gray-500">Terms
+                            &
+                            Conditions</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center justify-center gap-10 border-t w-full pt-6">
+                <a href="/" class="">
+                    <img src="/assets/icons/android_download.svg" alt="download-on-the-app-store" class="w-28 h-[35px]">
+                </a>
+                <a href="/">
+                    <img src="/assets/icons/IOS_download.svg" alt="download-on-the-google-play" class="w-28 h-[40px]">
+                </a>
+            </div>
+        </section>
+        <section class="w-full pt-5 flex flex-col items-center gap-4 justify-between">
+            <div>
+                <ul class="flex items-center justify-end gap-5 lg:gap-10 flex-wrap">
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/facebook.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/twitter.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/instagram.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.facebook.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/linkedin.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center">
+                        <a href="https://www.youtube.com" target="_blank" class="w-5 h-5">
+                            <img src="/assets/icons/youtube.svg" alt="facebook icon" class="w-full h-full">
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <p class="secondary-text text-sm text-center">© 2013-25 NoBroker Technologies Solutions Pvt. Ltd.</p>
+        </section>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Login Popup start -->
+    <div id="loginOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="loginPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/images/signupHome.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full lg:w-[80%] mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <a href="/home.html"
+                            class="bg-[#F23252] block text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</a>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Login Popup end -->
+
+    <!-- Signup Popup start -->
+    <div id="signupOverlay"
+        class="hidden w-full h-screen flex items-center justify-center px-6 fixed inset-0 z-50 bg-[rgba(0,0,0,0.4)] pb-10">
+        <div id="signupPopup"
+            class="w-full lg:w-[60%] h-[80vh] 2xl:w-[40%] 2xl:h-[50vh] bg-white flex flex-col lg:flex-row">
+            <div
+                class="w-full lg:w-[40%] h-auto lg:h-full bg-gray-50 p-10 flex flex-col items-start justify-center gap-2">
+                <img src="/assets/images/signupHome.png" alt="" class="w-[70px] h-[70px]">
+                <h4 class="font-semibold">Login / Sign up</h4>
+                <ul class="flex flex-col items-start gap-2">
+                    <li class=" flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Zero Brokerage.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>Thousands of new listing daily.</span>
+                    </li>
+                    <li class="flex items-center gap-1 text-xs text-gray-600">
+                        <i class="bi bi-check2"></i>
+                        <span>100 Cr+ Brokerage saved monthly.</span>
+                    </li>
+                </ul>
+            </div>
+            <div
+                class="w-full lg:w-[60%] h-auto lg:h-full bg-white px-10 pt-14 pb-10 flex flex-col items-start justify-between gap-5">
+                <form action="" class="w-full">
+                    <h4 class="font-semibold text-lg">Enter phone to continue</h4>
+                    <div class="w-full mt-4">
+                        <input type="number" name="phoneNumber" id="phoneNumber"
+                            class="border outline-none p-2.5 w-full text-sm text-gray-600"
+                            placeholder="Enter Mobile Number">
+
+                        <!-- <button type="button"
+                          class="bg-[#F23252] text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</button> -->
+                        <a href="/home.html"
+                            class="bg-[#F23252] block text-white font-semibold text-sm py-2.5 mt-5 w-full text-center">Continue</a>
+                    </div>
+
+                </form>
+                <p class="text-xs">
+                    By continuing, you agree to our <a href="/" class="font-semibold">Terms & Conditions</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Signup Popup end -->
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
